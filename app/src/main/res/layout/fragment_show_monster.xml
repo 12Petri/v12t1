@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    tools:context=".fragments.ShowMonsterFragment">
+
+    <ImageView
+        android:id="@+id/MonsterImage"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        tools:src="@drawable/luu_leonardo"
+        android:contentDescription="Hirviön kuva"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/MonsterNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hirviön nimi"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/MonsterLifeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Henki 0/0"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/MonsterTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vampyyri"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageButton
+        android:id="@+id/AttackMonsterButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="Hyökkäys"
+        android:src="@drawable/taistele"
+        android:scaleType="centerInside"/>
+
+</LinearLayout>
