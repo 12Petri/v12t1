@@ -61,7 +61,8 @@ public class ShowMonsterFragment extends Fragment {
 
     private void generateAndDisplayMonster() {
         GameManager gm = GameManager.getInstance();
-        currentMonster = gm.generateMonster();
+        gm.generateMonster();
+        currentMonster = gm.getLatestMonster();
         updateMonsterUI();
     }
 
