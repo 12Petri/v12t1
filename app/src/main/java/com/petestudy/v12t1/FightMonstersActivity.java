@@ -23,11 +23,11 @@ public class FightMonstersActivity extends AppCompatActivity {
     }
 
     public void showMonster(View view) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.FightMonsterFrame, new ShowMonsterFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.FightMonstersFrame, new ShowMonsterFragment()).commit();
     }
 
     public void showBoss(View view) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.FightMonsterFrame, new BossFightFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.FightMonstersFrame, new BossFightFragment()).commit();
     }
 
     public void returnToMain(View view) {
